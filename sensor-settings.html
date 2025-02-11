@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Настройка датчиков</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Настройка датчиков</h1>
+    <div id="sensorData">
+      <p>UID X: <span id="uidX">xxx</span></p>
+      <p>UID Y: <span id="uidY">xxx</span></p>
+      <p>UID Z: <span id="uidZ">xxx</span></p>
+    </div>
+    <form id="sensorForm">
+      <label for="newUidX">UID X:</label>
+      <input type="text" id="newUidX" name="newUidX">
+      <button type="button" onclick="sendUid('X')">Отправить</button><br><br>
+
+      <label for="newUidY">UID Y:</label>
+      <input type="text" id="newUidY" name="newUidY">
+      <button type="button" onclick="sendUid('Y')">Отправить</button><br><br>
+
+      <label for="newUidZ">UID Z:</label>
+      <input type="text" id="newUidZ" name="newUidZ">
+      <button type="button" onclick="sendUid('Z')">Отправить</button><br><br>
+    </form>
+    <button onclick="location.href='/'">На главную</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

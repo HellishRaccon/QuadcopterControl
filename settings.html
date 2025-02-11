@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Настройки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Настройки</h1>
+    <form id="settingsForm">
+      <label for="difficulty">Сложность:</label>
+      <select id="difficulty" name="difficulty">
+        <option value="0">Легко</option>
+        <option value="1">Сложно</option>
+      </select><br><br>
+
+      <label for="sound">Звук (Beep):</label>
+      <select id="sound" name="sound">
+        <option value="1">Вкл</option>
+        <option value="0">Выкл</option>
+      </select><br><br>
+
+      <label for="ovzMode">Режим "ОВЗ":</label>
+      <select id="ovzMode" name="ovzMode">
+        <option value="0">Выкл</option>
+        <option value="1">Вкл</option>
+      </select><br><br>
+
+      <label for="ovzAxis">Оси "ОВЗ":</label>
+      <select id="ovzAxis" name="ovzAxis">
+        <option value="0">Только Z</option>
+        <option value="1">XYZ</option>
+      </select><br><br>
+
+      <label for="dYaw">dYaw (0-30):</label>
+      <input type="number" id="dYaw" name="dYaw" min="0" max="30" step="0.1"><br><br>
+
+      <label for="maxX">Макс. X:</label>
+      <input type="number" id="maxX" name="maxX" step="0.1"><br><br>
+
+      <label for="maxY">Макс. Y:</label>
+      <input type="number" id="maxY" name="maxY" step="0.1"><br><br>
+
+      <label for="maxZ">Макс. Z:</label>
+      <input type="number" id="maxZ" name="maxZ" step="0.1"><br><br>
+
+      <button type="submit">Сохранить</button>
+    </form>
+    <button onclick="location.href='/sd-card'">SD-карта</button>
+    <button onclick="location.href='/'">На главную</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
